@@ -58,7 +58,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="Zakaz" Content="Показать меню" HorizontalAlignment="Left" Margin="404,229,-254,0" VerticalAlignment="Top" Width="135" Height="30" Click="Zakaz_Click" Grid.Column="2"/>
+        <Button x:Name="Zakaz" Content="Очистить и показать меню" HorizontalAlignment="Left" Margin="404,229,-272,0" VerticalAlignment="Top" Width="163" Height="30" Click="Zakaz_Click" Grid.Column="2"/>
         <ListView x:Name="SpisokVsehZakazov" Grid.Column="2" HorizontalAlignment="Left" Height="213" Margin="314,10,-350,0" VerticalAlignment="Top" Width="314">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -71,7 +71,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="OldZakaz" Content="Показать старый заказ" HorizontalAlignment="Left" Margin="404,265,-254,0" VerticalAlignment="Top" Width="135" Height="30" Click="OldZakaz_Click" Grid.Column="2"/>
+        <Button x:Name="OldZakaz" Content="Показать старый заказ" HorizontalAlignment="Left" Margin="404,265,-272,0" VerticalAlignment="Top" Width="163" Height="30" Click="OldZakaz_Click" Grid.Column="2"/>
 
     </Grid>
 </Window>

@@ -19,9 +19,9 @@ namespace ConsoleApp8.Model
             Bludo Morozhka = new Desert(10, 25, "КДшная Морожка", 7, 5.99);
             Bludo Bulgakov = new Desert(5, 30, "Булка из Булгакова", 8, 15);
             Bludo Pokramsali = new Desert(3, 50, "Фруктовый салатик", 9, 20);
-            Bludo Baltika = new Drink(0, 50, "Лучшее пиво", 10, 39.99);
-            Bludo SamagonDeda = new Drink(0, 300, "Самагон деда", 11, 0);
-            Bludo BabyschkinSok = new Drink(0, 25, "Бабушкин сок", 12, 0);
+            Bludo Baltika = new Drink(1, 50, "Лучшее пиво", 10, 39.99);
+            Bludo SamagonDeda = new Drink(1, 300, "Самагон деда", 11, 0);
+            Bludo BabyschkinSok = new Drink(1, 25, "Бабушкин сок", 12, 0);
             Bludo Kolbaski = new Snacks(10, 100, "Колбаски", 13, 50);
             Bludo Syrok = new Snacks(10, 100, "Сырный сыр", 14, 50);
             Bludo Ovosch = new Snacks(10, 85, "Овощи зарезанные", 15, 40);

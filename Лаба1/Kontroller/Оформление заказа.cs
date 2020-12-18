@@ -1,8 +1,10 @@
 ﻿using ConsoleApp8.Model;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Windows;
 
 namespace ConsoleApp8.Kontroller
 {
@@ -43,6 +45,7 @@ namespace ConsoleApp8.Kontroller
             AYF2.Add(aaa1);
             AYF = new List<ZakazannoeBlyudo>();
             return true;
+
         }
         
     }

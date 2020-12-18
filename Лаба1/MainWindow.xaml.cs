@@ -36,34 +36,66 @@ namespace Лаба1
             SpisokVsehZakazov.ItemsSource = oformlenie.AYF2;
 
         }
-
         private void MenuView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
-
-
         private void ZurBestellunghinzufugen_Click(object sender, RoutedEventArgs e)
         {
-            oformlenie.Vybrat((Bludo)MenuView.SelectedItem, Convert.ToInt32(Kolvo.Text));
+            if (MenuView.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите блюдо из меню");
+            }
+            else
+            try
+            {
+                oformlenie.Vybrat((Bludo)MenuView.SelectedItem, Convert.ToInt32(Kolvo.Text));
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show("Введите количество с помощью цифр");
+            }
             SpisokZakaza.Items.Refresh();
         }
 
         private void Bestellungbeenden_Click(object sender, RoutedEventArgs e)
         {
-            oformlenie.Sozdat();
+            if (SpisokZakaza.Items.Count == 0)
+            {
+                MessageBox.Show("Выберите блюдо из меню");
+            }
+            else
+                try
+                {
+                    oformlenie.Sozdat();
+                }
+                catch(Exception ax)
+                {
+                    MessageBox.Show("Выберите блюдо из меню");
+                }
             SpisokVsehZakazov.Items.Refresh();
-
         }
 
         private void Zakaz_Click(object sender, RoutedEventArgs e)
         {
-            SpisokZakaza.ItemsSource = oformlenie.AYF;
+                SpisokZakaza.ItemsSource = oformlenie.AYF;
         }
-
         private void OldZakaz_Click(object sender, RoutedEventArgs e)
         {
-            SpisokZakaza.ItemsSource = ((ZakazDannie)SpisokVsehZakazov.SelectedItem).SpisokBlyud;
+            if (SpisokVsehZakazov.SelectedItem == null)
+            {
+                MessageBox.Show("Выберите заказ из списка");
+            }
+            else 
+            try
+            {
+                SpisokZakaza.ItemsSource = ((ZakazDannie)SpisokVsehZakazov.SelectedItem).SpisokBlyud;
+            }
+            catch (Exception ix)
+            {
+                MessageBox.Show("Выберите заказ из списка");
+            }
+
         }
     }
 }
